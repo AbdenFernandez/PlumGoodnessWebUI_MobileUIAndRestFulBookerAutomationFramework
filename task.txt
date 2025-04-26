@@ -1,0 +1,15 @@
+############Arjun##########
+Login Functionality -  completed
+User buys product - completed
+user profile - completed web
+sorting(android and web) - completed web
+plum charms web -  completed
+currency web - completed
+
+###########Abden###########
+Cart functionality(android and web) - completed
+Filter(android and web) - completed
+user profile - (Android)
+sorting(android and web)- completed Android
+plum charms android - completed
+edit profile android - completed

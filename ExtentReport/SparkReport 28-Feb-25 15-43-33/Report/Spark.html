@@ -1,0 +1,3657 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 28, 2025 03:43:33 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 28, 2025 03:43:33 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 28, 2025 03:53:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>6</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'>
+<b>6</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='25%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='89%'><b>17</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='10%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>291</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validate cart functionality of Plum Goodness App":99.686,"Validate Filter Functionality":50.586,"Validate Login Functionality":123.896,"Validate Plum Charm Feature":41.338,"Validate sort functionality":47.964,"Validate Shopping Functionality":32.564,"Verify user profile functionality":77.37,"Validate currency conversion feature":96.951
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@web</td>
+<td>17</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>89.474%</td>
+</tr>
+<tr>
+<td>@android</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>85.714%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 6,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 17,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 291,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@web</a><a class="dropdown-item" href="#">@android</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate cart functionality of Plum Goodness App</p>
+            <p class="text-sm">
+              <span>3:43:34 pm</span> / <span>00:01:39:686</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate cart functionality of Plum Goodness App</h5>
+<span class='badge badge-success'>02.28.2025 3:43:34 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:45:14 pm</span>
+<span class='badge badge-default'>00:01:39:686</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>verify user can add product into cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.search" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_clicks_on_add_to_cart_button_of_first_product()">
+                <span>When user clicks on add to cart button of first product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_product_added_to_cart_successfully()">
+                <span>Then verify product added to cart successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can add product into cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>verify user can remove product from cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.search" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded10.png' src="../Screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded11.png' src="../Screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_clicks_on_add_to_cart_button_of_first_product()">
+                <span>When user clicks on add to cart button of first product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded12.png' src="../Screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_product_added_to_cart_successfully()">
+                <span>Then verify product added to cart successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded13.png' src="../Screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.userGoesToCartPage()">
+                <span>When user goes to cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded14.png' src="../Screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.verifyUserIsOnCartPage()">
+                <span>And verify user is on cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded15.png' src="../Screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.userClicksOnDeleteIcon()">
+                <span>And user clicks on delete icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded16.png' src="../Screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.verifyProductSuccessfullyRemovedFromCart()">
+                <span>Then verify product successfully removed from cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can remove product from cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded17.png' src="../Screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded18.png' src="../Screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>verify price breakdown in cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded19.png' src="../Screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded20.png' src="../Screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.search" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded21.png' src="../Screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded22.png' src="../Screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_clicks_on_add_to_cart_button_of_first_product()">
+                <span>When user clicks on add to cart button of first product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded23.png' src="../Screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_product_added_to_cart_successfully()">
+                <span>Then verify product added to cart successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded24.png' src="../Screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.userGoesToCartPage()">
+                <span>When user goes to cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded25.png' src="../Screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.verifyPriceBreakdownInCart()">
+                <span>Then verify price breakdown in cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price breakdown in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded26.png' src="../Screenshots/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded27.png' src="../Screenshots/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Filter Functionality</p>
+            <p class="text-sm">
+              <span>3:45:14 pm</span> / <span>00:00:50:586</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate Filter Functionality</h5>
+<span class='badge badge-success'>02.28.2025 3:45:14 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:46:05 pm</span>
+<span class='badge badge-default'>00:00:50:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>verify price range filter works correctly</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded28.png' src="../Screenshots/embedded28.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded29.png' src="../Screenshots/embedded29.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.type" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded30.png' src="../Screenshots/embedded30.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded31.png' src="../Screenshots/embedded31.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_chooses_the_first_price_filter_from_the_list()">
+                <span>When user chooses the first price filter from the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded32.png' src="../Screenshots/embedded32.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.steps.ProductsSteps.verify_price_filter_is_applied_to_the_search_list()">
+                <span>Then verify price filter is applied to the search list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.automation.steps.ProductsSteps.verify_price_filter_is_applied_to_the_search_list(ProductsSteps.java:44)
+	at ✽.verify price filter is applied to the search list(file:///C:/Users/291491/Desktop/PLumGoodness/plumgoodness-capstone/src/test/resources/features/FilterFunctionality.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Failed Executing the following Scenario : verify price range filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded33.png' src="../Screenshots/embedded33.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded34.png' src="../Screenshots/embedded34.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>verify concern filter works correctly</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded35.png' src="../Screenshots/embedded35.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded36.png' src="../Screenshots/embedded36.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.type" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded37.png' src="../Screenshots/embedded37.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded38.png' src="../Screenshots/embedded38.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_chooses_the_first_concern_filter_from_the_list()">
+                <span>When user chooses the first concern filter from the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded39.png' src="../Screenshots/embedded39.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_concern_filter_is_applied_to_the_search_list()">
+                <span>Then verify concern filter is applied to the search list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify concern filter works correctly
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded40.png' src="../Screenshots/embedded40.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded41.png' src="../Screenshots/embedded41.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="90"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Login Functionality</p>
+            <p class="text-sm">
+              <span>3:46:05 pm</span> / <span>00:02:03:896</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate Login Functionality</h5>
+<span class='badge badge-success'>02.28.2025 3:46:05 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:48:08 pm</span>
+<span class='badge badge-default'>00:02:03:896</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=90</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with valid phone number</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded42.png' src="../Screenshots/embedded42.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded43.png' src="../Screenshots/embedded43.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClickLoginButton()">
+                <span>When user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded44.png' src="../Screenshots/embedded44.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyLoginPopUpIsDisplayed()">
+                <span>And verify login pop up is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded45.png' src="../Screenshots/embedded45.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.userInputPhoneNumber(java.lang.String)">
+                <span>When user input phone number "phone.no"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded46.png' src="../Screenshots/embedded46.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyOtpFieldIsDisplayedAndUserInputOtp()">
+                <span>And verify otp field is displayed and user input otp</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded47.png' src="../Screenshots/embedded47.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verifyUserIsSuccessfullyLoggedIn()">
+                <span>Then verify user is successfully logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User tries to login with valid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded48.png' src="../Screenshots/embedded48.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded49.png' src="../Screenshots/embedded49.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>verify user cannot login using invalid phone number</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>verify user cannot login using invalid phone number</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded50.png' src="../Screenshots/embedded50.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded51.png' src="../Screenshots/embedded51.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded52.png' src="../Screenshots/embedded52.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify login pop up is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded53.png' src="../Screenshots/embedded53.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user input invalid phone number "123456"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded54.png' src="../Screenshots/embedded54.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify otp field is not displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded55.png' src="../Screenshots/embedded55.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded56.png' src="../Screenshots/embedded56.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>verify user cannot login using invalid phone number</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded57.png' src="../Screenshots/embedded57.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded58.png' src="../Screenshots/embedded58.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded59.png' src="../Screenshots/embedded59.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify login pop up is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded60.png' src="../Screenshots/embedded60.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user input invalid phone number "000000"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded61.png' src="../Screenshots/embedded61.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify otp field is not displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded62.png' src="../Screenshots/embedded62.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded63.png' src="../Screenshots/embedded63.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="139"><span class="badge log pass-bg mr-2">Pass</span>verify user cannot login using invalid phone number</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded64.png' src="../Screenshots/embedded64.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded65.png' src="../Screenshots/embedded65.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded66.png' src="../Screenshots/embedded66.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify login pop up is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded67.png' src="../Screenshots/embedded67.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user input invalid phone number "123456789"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded68.png' src="../Screenshots/embedded68.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify otp field is not displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user cannot login using invalid phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded69.png' src="../Screenshots/embedded69.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded70.png' src="../Screenshots/embedded70.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="154"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Plum Charm Feature</p>
+            <p class="text-sm">
+              <span>3:48:08 pm</span> / <span>00:00:41:338</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate Plum Charm Feature</h5>
+<span class='badge badge-success'>02.28.2025 3:48:08 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:48:50 pm</span>
+<span class='badge badge-default'>00:00:41:338</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=154</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>verify the savings for a given cart value is within the specified value</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded71.png' src="../Screenshots/embedded71.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded72.png' src="../Screenshots/embedded72.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClickLoginButton()">
+                <span>When user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded73.png' src="../Screenshots/embedded73.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyLoginPopUpIsDisplayed()">
+                <span>Then verify login pop up is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded74.png' src="../Screenshots/embedded74.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.userInputPhoneNumber(java.lang.String)">
+                <span>When user input phone number "phone.no"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded75.png' src="../Screenshots/embedded75.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyOtpFieldIsDisplayedAndUserInputOtp()">
+                <span>And verify otp field is displayed and user input otp</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded76.png' src="../Screenshots/embedded76.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verifyUserIsSuccessfullyLoggedIn()">
+                <span>Then verify user is successfully logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded77.png' src="../Screenshots/embedded77.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClicksOnProfileButton()">
+                <span>When user clicks on profile button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded78.png' src="../Screenshots/embedded78.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProfileSteps.verifyUserIsOnProfilePage()">
+                <span>Then verify user is on profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded79.png' src="../Screenshots/embedded79.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClickOnPlumRewardsButton()">
+                <span>When user click on plum rewards button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded80.png' src="../Screenshots/embedded80.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.PlumCharmSteps.verifyUserIsOnPlumRewardsPage()">
+                <span>Then verify user is on plum rewards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded81.png' src="../Screenshots/embedded81.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.PlumCharmSteps.userClickOnCalculateButton()">
+                <span>When user click on calculate button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded82.png' src="../Screenshots/embedded82.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.PlumCharmSteps.userInputCartValueOf(int)">
+                <span>And user input cart value of 2000</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded83.png' src="../Screenshots/embedded83.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.PlumCharmSteps.verifyPriceForAllTierIsBelowTheEnteredCartValueOf(int)">
+                <span>Then verify price for all tier is below the entered cart value of 2000</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify the savings for a given cart value is within the specified value
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded84.png' src="../Screenshots/embedded84.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded85.png' src="../Screenshots/embedded85.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="186"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate sort functionality</p>
+            <p class="text-sm">
+              <span>3:48:50 pm</span> / <span>00:00:47:964</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate sort functionality</h5>
+<span class='badge badge-success'>02.28.2025 3:48:50 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:49:38 pm</span>
+<span class='badge badge-default'>00:00:47:964</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=186</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="187"><span class="badge log fail-bg mr-2">Fail</span>Verify the price sorting functionality works correctly in ascending order</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded86.png' src="../Screenshots/embedded86.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded87.png' src="../Screenshots/embedded87.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.type" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded88.png' src="../Screenshots/embedded88.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded89.png' src="../Screenshots/embedded89.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.userClickOnSortButton()">
+                <span>When user click on sort button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded90.png' src="../Screenshots/embedded90.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.theUserSelectsTheOptionToSortProductsByPriceInAscendingOrder()">
+                <span>When the user selects the option to sort products by price in ascending order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded91.png' src="../Screenshots/embedded91.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.steps.ProductsSteps.theApplicationDisplaysProductsSortedFromTheLowestToHighestPrice()">
+                <span>Then the application displays products sorted from the lowest to highest price</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.automation.steps.ProductsSteps.theApplicationDisplaysProductsSortedFromTheLowestToHighestPrice(ProductsSteps.java:74)
+	at ✽.the application displays products sorted from the lowest to highest price(file:///C:/Users/291491/Desktop/PLumGoodness/plumgoodness-capstone/src/test/resources/features/SortFunctionality.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Failed Executing the following Scenario : Verify the price sorting functionality works correctly in ascending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded92.png' src="../Screenshots/embedded92.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded93.png' src="../Screenshots/embedded93.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="204"><span class="badge log pass-bg mr-2">Pass</span>Verify the price sorting functionality works correctly in descending order</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded94.png' src="../Screenshots/embedded94.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded95.png' src="../Screenshots/embedded95.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.type" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded96.png' src="../Screenshots/embedded96.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded97.png' src="../Screenshots/embedded97.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.userClickOnSortButton()">
+                <span>When user click on sort button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded98.png' src="../Screenshots/embedded98.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.theUserSelectsTheOptionToSortProductsByPriceInDescendingOrder()">
+                <span>When the user selects the option to sort products by price in descending order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded99.png' src="../Screenshots/embedded99.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.theApplicationDisplaysProductsSortedFromTheHighestToLowestPrice()">
+                <span>Then the application displays products sorted from the highest to lowest price</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify the price sorting functionality works correctly in descending order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded100.png' src="../Screenshots/embedded100.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded101.png' src="../Screenshots/embedded101.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="221"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Shopping Functionality</p>
+            <p class="text-sm">
+              <span>3:49:38 pm</span> / <span>00:00:32:564</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate Shopping Functionality</h5>
+<span class='badge badge-success'>02.28.2025 3:49:38 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:50:10 pm</span>
+<span class='badge badge-default'>00:00:32:564</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=221</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>verify user can place order successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded102.png' src="../Screenshots/embedded102.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded103.png' src="../Screenshots/embedded103.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userSearchInSearchBar(java.lang.String)">
+                <span>When user search "product.search" in search bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded104.png' src="../Screenshots/embedded104.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_searched_product_is_displayed()">
+                <span>Then verify searched product is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded105.png' src="../Screenshots/embedded105.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.user_clicks_on_add_to_cart_button_of_first_product()">
+                <span>When user clicks on add to cart button of first product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded106.png' src="../Screenshots/embedded106.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.verify_product_added_to_cart_successfully()">
+                <span>Then verify product added to cart successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded107.png' src="../Screenshots/embedded107.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProductsSteps.userGoesToCartPage()">
+                <span>When user goes to cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded108.png' src="../Screenshots/embedded108.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.verifyUserIsOnCartPage()">
+                <span>And verify user is on cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded109.png' src="../Screenshots/embedded109.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.userClicksInCheckoutButton()">
+                <span>And user clicks in checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded110.png' src="../Screenshots/embedded110.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.CartSteps.verifyCheckoutPageIsDisplayed()">
+                <span>And verify checkout page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded111.png' src="../Screenshots/embedded111.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded112.png' src="../Screenshots/embedded112.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="245"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify user profile functionality</p>
+            <p class="text-sm">
+              <span>3:50:10 pm</span> / <span>00:01:17:370</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify user profile functionality</h5>
+<span class='badge badge-success'>02.28.2025 3:50:10 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:51:28 pm</span>
+<span class='badge badge-default'>00:01:17:370</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=245</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="246"><span class="badge log pass-bg mr-2">Pass</span>user tries to successfully add new address and delete a saved address</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.user_open_application()">
+                <span>Given user open application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded113.png' src="../Screenshots/embedded113.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verify_user_is_on_home_page()">
+                <span>Then verify user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded114.png' src="../Screenshots/embedded114.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClickLoginButton()">
+                <span>When user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded115.png' src="../Screenshots/embedded115.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyLoginPopUpIsDisplayed()">
+                <span>Then verify login pop up is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded116.png' src="../Screenshots/embedded116.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.userInputPhoneNumber(java.lang.String)">
+                <span>When user input phone number "phone.no"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded117.png' src="../Screenshots/embedded117.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.LoginSteps.verifyOtpFieldIsDisplayedAndUserInputOtp()">
+                <span>And verify otp field is displayed and user input otp</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded118.png' src="../Screenshots/embedded118.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.verifyUserIsSuccessfullyLoggedIn()">
+                <span>Then verify user is successfully logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded119.png' src="../Screenshots/embedded119.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.HomeSteps.userClicksOnProfileButton()">
+                <span>When user clicks on profile button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded120.png' src="../Screenshots/embedded120.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProfileSteps.verifyUserIsOnProfilePage()">
+                <span>Then verify user is on profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded121.png' src="../Screenshots/embedded121.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.ProfileSteps.userClicksOnManageAddressOption()">
+                <span>When user clicks on manage address option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded122.png' src="../Screenshots/embedded122.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.verifyUserIsOnAddressPage()">
+                <span>Then verify user is on address page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded123.png' src="../Screenshots/embedded123.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.userClickOnAddNewAddressButton()">
+                <span>When user click on add new address button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded124.png' src="../Screenshots/embedded124.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.verifyAddressFormPageIsDisplayed()">
+                <span>Then verify address form page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded125.png' src="../Screenshots/embedded125.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.userFillsInNewAddress()">
+                <span>When user fills in new address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded126.png' src="../Screenshots/embedded126.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.userClicksOnSaveAddressButton()">
+                <span>Then user clicks on save address button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded127.png' src="../Screenshots/embedded127.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.verifyAddressAddedIsAddedSuccessfully()">
+                <span>And verify address added is added successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded128.png' src="../Screenshots/embedded128.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.userClickDeleteButtonOfAddress()">
+                <span>When user click delete button of address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded129.png' src="../Screenshots/embedded129.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.steps.AddressSteps.verifyAddressIsDeletedSuccessfully()">
+                <span>Then verify address is deleted successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user tries to successfully add new address and delete a saved address
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded130.png' src="../Screenshots/embedded130.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded131.png' src="../Screenshots/embedded131.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="285"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate currency conversion feature</p>
+            <p class="text-sm">
+              <span>3:51:28 pm</span> / <span>00:01:36:951</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate currency conversion feature</h5>
+<span class='badge badge-success'>02.28.2025 3:51:28 pm</span>
+<span class='badge badge-danger'>02.28.2025 3:53:05 pm</span>
+<span class='badge badge-default'>00:01:36:951</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=285</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="286"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="287"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded132.png' src="../Screenshots/embedded132.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded133.png' src="../Screenshots/embedded133.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user changes currency to "Euro"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded134.png' src="../Screenshots/embedded134.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify currency is not "₹"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded135.png' src="../Screenshots/embedded135.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded136.png' src="../Screenshots/embedded136.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="298"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded137.png' src="../Screenshots/embedded137.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded138.png' src="../Screenshots/embedded138.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user changes currency to "US Dollar"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded139.png' src="../Screenshots/embedded139.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify currency is not "₹"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded140.png' src="../Screenshots/embedded140.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded141.png' src="../Screenshots/embedded141.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="309"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded142.png' src="../Screenshots/embedded142.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded143.png' src="../Screenshots/embedded143.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user changes currency to "Canadian Dollar"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded144.png' src="../Screenshots/embedded144.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify currency is not "₹"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded145.png' src="../Screenshots/embedded145.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded146.png' src="../Screenshots/embedded146.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="320"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded147.png' src="../Screenshots/embedded147.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded148.png' src="../Screenshots/embedded148.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user changes currency to "British Pound Sterling"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded149.png' src="../Screenshots/embedded149.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify currency is not "₹"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded150.png' src="../Screenshots/embedded150.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded151.png' src="../Screenshots/embedded151.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="331"><span class="badge log pass-bg mr-2">Pass</span>verify user can convert currency</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user open application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded152.png' src="../Screenshots/embedded152.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify user is on home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded153.png' src="../Screenshots/embedded153.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user changes currency to "Dirham"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded154.png' src="../Screenshots/embedded154.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify currency is not "₹"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify user can convert currency
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded155.png' src="../Screenshots/embedded155.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+      <div>Scenario Execution has been Completed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded156.png' src="../Screenshots/embedded156.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@web</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@web</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>verify user can add product into cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify user can add product into cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>verify user can remove product from cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify user can remove product from cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>verify price breakdown in cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify price breakdown in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='60'>verify price range filter works correctly</a>
+<div class="">
+<span class="badge badge-default">Validate Filter Functionality.verify price range filter works correctly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:45:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='75'>verify concern filter works correctly</a>
+<div class="">
+<span class="badge badge-default">Validate Filter Functionality.verify concern filter works correctly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:46:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='91'>User tries to login with valid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.User tries to login with valid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:46:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='109'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:47:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='124'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:47:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='139'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:48:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='155'>verify the savings for a given cart value is within the specified value</a>
+<div class="">
+<span class="badge badge-default">Validate Plum Charm Feature.verify the savings for a given cart value is within the specified value</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:48:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='186' id='187'>Verify the price sorting functionality works correctly in ascending order</a>
+<div class="">
+<span class="badge badge-default">Validate sort functionality.Verify the price sorting functionality works correctly in ascending order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:49:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='186' id='204'>Verify the price sorting functionality works correctly in descending order</a>
+<div class="">
+<span class="badge badge-default">Validate sort functionality.Verify the price sorting functionality works correctly in descending order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:49:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='221' id='222'>verify user can place order successfully</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping Functionality.verify user can place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='245' id='246'>user tries to successfully add new address and delete a saved address</a>
+<div class="">
+<span class="badge badge-default">Verify user profile functionality.user tries to successfully add new address and delete a saved address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:51:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='285' id='287'>verify user can convert currency</a>
+<div class="">
+<span class="badge badge-default">Validate currency conversion feature.verify user can convert currency</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:51:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='285' id='298'>verify user can convert currency</a>
+<div class="">
+<span class="badge badge-default">Validate currency conversion feature.verify user can convert currency</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:52:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='285' id='309'>verify user can convert currency</a>
+<div class="">
+<span class="badge badge-default">Validate currency conversion feature.verify user can convert currency</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:52:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='285' id='320'>verify user can convert currency</a>
+<div class="">
+<span class="badge badge-default">Validate currency conversion feature.verify user can convert currency</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:52:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='285' id='331'>verify user can convert currency</a>
+<div class="">
+<span class="badge badge-default">Validate currency conversion feature.verify user can convert currency</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>12</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@android</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@android</h4>
+<span status="pass" class='badge log pass-bg'>12 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>verify user can add product into cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify user can add product into cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>verify user can remove product from cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify user can remove product from cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>verify price breakdown in cart</a>
+<div class="">
+<span class="badge badge-default">Validate cart functionality of Plum Goodness App.verify price breakdown in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='60'>verify price range filter works correctly</a>
+<div class="">
+<span class="badge badge-default">Validate Filter Functionality.verify price range filter works correctly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:45:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='75'>verify concern filter works correctly</a>
+<div class="">
+<span class="badge badge-default">Validate Filter Functionality.verify concern filter works correctly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:46:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='91'>User tries to login with valid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.User tries to login with valid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:46:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='109'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:47:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='124'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:47:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='90' id='139'>verify user cannot login using invalid phone number</a>
+<div class="">
+<span class="badge badge-default">Validate Login Functionality.verify user cannot login using invalid phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:48:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='155'>verify the savings for a given cart value is within the specified value</a>
+<div class="">
+<span class="badge badge-default">Validate Plum Charm Feature.verify the savings for a given cart value is within the specified value</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:48:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='186' id='187'>Verify the price sorting functionality works correctly in ascending order</a>
+<div class="">
+<span class="badge badge-default">Validate sort functionality.Verify the price sorting functionality works correctly in ascending order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:49:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='186' id='204'>Verify the price sorting functionality works correctly in descending order</a>
+<div class="">
+<span class="badge badge-default">Validate sort functionality.Verify the price sorting functionality works correctly in descending order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:49:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='221' id='222'>verify user can place order successfully</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping Functionality.verify user can place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='245' id='246'>user tries to successfully add new address and delete a saved address</a>
+<div class="">
+<span class="badge badge-default">Verify user profile functionality.user tries to successfully add new address and delete a saved address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='59' id='72'>Then verify price filter is applied to the search list</a>
+<div class="">
+<span class="badge badge-default">Validate Filter Functionality.verify price range filter works correctly.Then verify price filter is applied to the search list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:49:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='186' id='201'>Then the application displays products sorted from the lowest to highest price</a>
+<div class="">
+<span class="badge badge-default">Validate sort functionality.Verify the price sorting functionality works correctly in ascending order.Then the application displays products sorted from the lowest to highest price</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

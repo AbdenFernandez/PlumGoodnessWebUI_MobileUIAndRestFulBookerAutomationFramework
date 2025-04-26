@@ -1,0 +1,11 @@
+{
+  "firstname" : "root",
+  "lastname" : "user",
+  "totalprice" : 5500,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2024-10-25",
+    "checkout" : "2024-10-26"
+  },
+  "additionalneeds" : "sudo su"
+}
